@@ -8,7 +8,7 @@ main {
     padding: 30px;
     background:
         linear-gradient(90deg, #ffffffff 25%, #ffffff00),
-        url(/assets/images/banner.jpg); /* Placeholder */
+        url(/assets/images/banner.jpg);
     background-position: 70% 50%;
 }
 
@@ -23,7 +23,7 @@ header h3 {
 
 /* Navigation bar */ 
 nav {
-    margin: 10px 0 10px 0;
+    margin: 0 0 10px 0;
     padding: 5px;
     background: #c8e4ff;
     display: flex;
@@ -32,9 +32,18 @@ nav {
     align-items: center;
 }
 
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.services--grid2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* Footer */
 footer {
-    margin: 10px 0 10px 0;
     padding: 5px;
     background: #c8e4ff;
     display: flex;
@@ -44,12 +53,12 @@ footer {
 }
 
 footer p {
-    font-size: smaller;
+    font-size: 12px;
 }
 
 /* Links */
 a {
-    color: #3e41f0;
+    color: #0075e2;
     text-decoration: underline;
     font-style: italic;
 }
