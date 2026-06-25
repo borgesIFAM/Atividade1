@@ -31,10 +31,21 @@ nav {
     margin: 0 0 10px 0;
     padding: 5px;
     background: #c8e4ff;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+@media (max-width: 600px) {
+    nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    nav {
+        grid-template-columns: 1fr;
+    }
 }
 
 .row {
