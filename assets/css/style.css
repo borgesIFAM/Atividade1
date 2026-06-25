@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Cabecalho */
 main {
     padding: 30px;
     background:
@@ -26,7 +25,6 @@ header h3 {
     font-style: italic;
 }
 
-/* Navigation bar */
 nav {
     margin: 0 0 10px 0;
     padding: 5px;
@@ -52,7 +50,6 @@ nav {
     padding: 20px 50px;
 }
 
-/* Footer */
 footer {
     padding: 5px;
     background: #c8e4ff;
@@ -66,9 +63,14 @@ footer p {
     font-size: 12px;
 }
 
-/* Links */
 a {
     color: #0075e2;
     text-decoration: underline;
     font-style: italic;
+    transition: 500ms;
+}
+
+a:hover {
+    color: #003a70;
+    transition: 500ms;
 }
